@@ -4,19 +4,20 @@ from pydantic import BaseModel
 app = FastAPI()
 
 class Item(BaseModel):
-    id: int
+    numLlista: int
     name: str
-    classe: str | None = None
-    price: float
-    tax: float | None = None
+    classe: str
+    altura: int
+    pes: int | None = None # Opcional
+    sexe: str
 
-# Exemple del tutorial
+# Exemple diccionari - exercici 1 
 @app.get("/agenda")
 def root():
     return {"1": "albert","2": "alex","3":"victor"}
 
-# GET
-@app.get("/items/{item_id}")
+# GET (id amb status d'error)
+@app.get("/items/{item_id}", status_code=404) # Afegim el status code per si posa un element no 
 async def read_item(item_id):
     return {"item_id": item_id}
 

@@ -1,1 +1,6 @@
 # UF2_FASTAPI
+## POSTMAN PUT
+![POSTMAN PUT](image.png)
+
+## SWAGGER
+![SWAGGER PUT](image-1.png)

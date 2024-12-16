@@ -30,4 +30,10 @@
 ![Intent 2](image-9.png)
 
 # Mostrar alfabet
-![alt text](image-12.png)
+![Alfabets](image-12.png)
+
+# Mostrar total d'intents restants
+[Intents restants](image-11.png)
+
+# Mostrar dades de la partida
+![Mostrar totes les dades de la partida](image-13.png)
